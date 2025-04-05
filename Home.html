@@ -10,7 +10,9 @@
 
 </head>
 
-<body>
+<body
+  style="background: rgb(2,2,18);
+background: linear-gradient(158deg, rgba(2,2,18,1) 0%, rgba(6,7,55,1) 26%, rgba(23,26,116,1) 61%, rgba(75,87,208,1) 100%);">
   <header class="header">
     <div class="header-container">
       <h1 class="logo"><a href="#">portfolio</a></h1>
@@ -22,7 +24,13 @@
           <a href="#">Sobre</a>
         </li>
         <li class="nav-item">
-          <a href="#">Produtos</a>
+          <a href="#">Produtos
+            <svg class="caret-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+              <path fill="currentColor"
+                d="M288.662 352H31.338c-17.818 0-26.741-21.543-14.142-34.142l128.662-128.662c7.81-7.81 20.474-7.81 28.284 0l128.662 128.662c12.6 12.599 3.676 34.142-14.142 34.142z">
+              </path>
+            </svg>
+          </a>
           <div class="dropdown">
             <a href="#">Produto 1</a>
             <a href="#">Produto 2</a>
@@ -30,7 +38,13 @@
           </div>
         </li>
         <li class="nav-item">
-          <a href="#">Serviços</a>
+          <a href="#">Serviços
+            <svg class="caret-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+              <path fill="currentColor"
+                d="M288.662 352H31.338c-17.818 0-26.741-21.543-14.142-34.142l128.662-128.662c7.81-7.81 20.474-7.81 28.284 0l128.662 128.662c12.6 12.599 3.676 34.142-14.142 34.142z">
+              </path>
+            </svg>
+          </a>
           <div class="dropdown">
             <a href="#">Serviço 1</a>
             <a href="#">Serviço 2</a>
@@ -43,16 +57,21 @@
       </ul>
     </div>
   </header>
-  
+
   <div class="content">
     <h2>Bem-vindo ao site</h2>
-    <p>Este é um exemplo de conteúdo abaixo da navbar fixa.</p>
-    
+    <p style="color: white;">Este é um exemplo de conteúdo abaixo da navbar fixa.</p>
+
     <!-- Conteúdo adicional para permitir rolagem e testar a navbar fixa -->
     <div style="height: 200vh;">
-      <p>Role para baixo para ver como a navbar permanece fixa no topo da página.</p>
+      <p style="color: white;">Role para baixo para ver como a navbar permanece fixa no topo da página.</p>
     </div>
   </div>
+
+  <div class="card">
+    <p>teste</p>
+  </div>
 </body>
+
 
 </html>
