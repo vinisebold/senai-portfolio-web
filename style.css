@@ -1,4 +1,4 @@
-/* Base e reset - Simplificado e agrupado */
+/* root */
 :root {
   --color-primary: #1a3264;
   --color-primary-dark: #0a1a33;
@@ -39,6 +39,7 @@ body {
 }
 
 ul {
+  margin-bottom: 0rem;
   list-style: none;
 }
 
@@ -160,7 +161,6 @@ section {
 }
 
 .main-nav {
-  margin-top: 5px;
   display: flex;
 }
 
@@ -168,19 +168,22 @@ section {
   display: flex;
   align-items: center;
   padding: 10px 14px;
-  color: var(--color-text);
+  color: hsl(0, 0%, 100%);
   font-size: 0.95em;
   font-weight: 500;
   text-transform: uppercase;
   text-align: center;
-  transition: var(--transition-default);
+  transition-behavior: normal;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+  transition-delay: 0ms;
+  transition-property: background-color;
   border-radius: var(--border-radius-sm);
 }
 
 .main-nav a:hover,
 .main-nav a:focus {
   background-color: var(--color-primary-light);
-  transform: translateY(-1px);
   outline: none;
 }
 
@@ -489,7 +492,6 @@ section {
     padding: 1rem;
   }
   
-  /* Ajustes do layout */
   .nomePrincipal {
     text-align: center;
     margin-bottom: 1.5rem;
