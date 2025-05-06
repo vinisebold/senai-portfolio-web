@@ -183,7 +183,7 @@ section {
 
 .main-nav a:hover,
 .main-nav a:focus {
-  background-color: var(--color-primary-light);
+  background-color: var(--color-accent);
   outline: none;
 }
 
