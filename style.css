@@ -311,7 +311,7 @@ section {
 }
 
 /* Card styles - Reusáveis*/
-#card {
+#card, .card-section {
   border-radius: var(--border-radius-lg);
   margin: 40px auto;
   min-height: 300px;
@@ -345,6 +345,14 @@ section {
 .card:hover {
   transform: translateY(-5px);
   box-shadow: var(--shadow-lg);
+}
+
+/* Ajuste de tamanho das imagens do carrossel para evitar altura excessiva */
+.carousel-item img {
+  max-height: 520px;
+  width: 100%;
+  object-fit: contain;
+  border-radius: 12px;
 }
 
 .nomePrincipal {
